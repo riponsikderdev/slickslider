@@ -1,0 +1,115 @@
+/* COMMON CSS ENDS HERE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1500px;
+    margin: 270px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+body {
+    font-family: var(--primaryfont);
+    background-color: #070561;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* COMMON CSS ENDS HERE */
+/* SLICK SLIDER STARTS HERE */
+.slide img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.slide {
+    margin: 0 20px;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+.slide.slick-center {
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+
+.container {
+    position: relative;
+}
+
+.leftArrow,
+.rightArrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #070561;
+    background-color: rgba(232, 248, 16, 0.999);
+    border-radius: 50%;
+    top: 135px;
+    cursor: pointer;
+    transition: 0.5s all linear;
+}
+
+.leftArrow {
+    left: 495px;
+}
+
+.rightArrow {
+    right: 493px;
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    background-color: #070561;
+    color: white;
+}
+
+.sliderDots {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sliderDots li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.sliderDots li button {
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    transition: 0.3s all linear;
+}
+
+.sliderDots li.slick-active button {
+    width: 30px;
+    background-color: rgb(7, 242, 66);
+}
+
+/* SLICK SLIDER ENDS HERE */
